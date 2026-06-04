@@ -20,3 +20,6 @@ class Book:
             return False
         self.is_borrowed = False
         return True
+
+    def get_info(self):
+        return f"{self.title} by {self.author}"
