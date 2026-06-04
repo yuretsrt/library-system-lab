@@ -32,3 +32,5 @@ class TestBookValidation(unittest.TestCase):
     def test_invalid_book_creation(self, title, author, year, expected_exception):
         with self.assertRaises(expected_exception):
             Book(title, author, year)
+
+            # ОНОВЛЕНО
