@@ -4,6 +4,7 @@ from user import User
 from book import Book
 from interfaces import Notifier
 
+
 class TestUser(unittest.TestCase):
     def setUp(self):
         self.mock_notifier = Mock(spec=Notifier)

@@ -2,6 +2,7 @@ import unittest
 from parameterized import parameterized
 from book import Book
 
+
 class TestBook(unittest.TestCase):
     def setUp(self):
         self.book = Book("1984", "Джордж Орвелл", 1949, book_id=1)
@@ -22,6 +23,7 @@ class TestBook(unittest.TestCase):
     def test_return_book_not_borrowed(self):
         res = self.book.return_book()
         self.assertFalse(res)
+
 
 class TestBookValidation(unittest.TestCase):
     @parameterized.expand([

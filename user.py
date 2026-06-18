@@ -1,6 +1,7 @@
 from interfaces import Observer, Notifier
 from book import Book
 
+
 class User:
     def __init__(self, name: str, user_id: int, max_books: int = 2, notifier: Notifier = None):
         self.name = name
@@ -28,6 +29,7 @@ class User:
                 self.notifier.notify(f"{self.name} повернув(ла) книгу: {book.title}")
             return True
         return False
+
 
 class Reader(User, Observer):
     def update(self, message: str):
