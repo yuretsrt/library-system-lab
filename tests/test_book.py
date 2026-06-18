@@ -8,9 +8,7 @@ class TestBook(unittest.TestCase):
         self.book = Book("1984", "Джордж Орвелл", 1949, book_id=1)
 
     def test_initial_state(self):
-        # Навмисно ламаємо тест для перевірки CI/CD: міняємо assertFalse на assertTrue
-        self.assertTrue(self.book.is_borrowed)
-
+        self.assertFalse(self.book.is_borrowed)
 
     def test_borrow_success(self):
         res = self.book.borrow()
