@@ -21,10 +21,8 @@ class Book:
         self.is_borrowed = False
         return True
 
-<<<<<<< HEAD
-    def get_description(self):
-        return f"Book: {self.title}"
-=======
     def get_info(self):
         return f"{self.title} by {self.author}"
->>>>>>> feature/change-book
+
+    def get_description(self):
+        return f"Book: {self.title}"
